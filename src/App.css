@@ -1,0 +1,53 @@
+/* ─────────────────────────────────────────────────────────────
+   Global Reset & Base Styles
+   (Main styling is in App.jsx inline)
+   ───────────────────────────────────────────────────────────── */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  overflow-x: hidden;
+  cursor: none;
+}
+
+/* Hide default scrollbar on webkit browsers for cleaner look */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(10, 6, 8, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(232, 99, 140, 0.4);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(232, 99, 140, 0.6);
+}
+
+/* Selection color */
+::selection {
+  background: rgba(232, 99, 140, 0.3);
+  color: #F5E6EC;
+}
+
+/* Prevent text selection on UI elements */
+button,
+nav {
+  user-select: none;
+  -webkit-user-select: none;
+}

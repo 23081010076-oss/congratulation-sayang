@@ -51,3 +51,76 @@ nav {
   user-select: none;
   -webkit-user-select: none;
 }
+
+/* ─────────────────────────────────────────────────────────────
+   RESPONSIVE MOBILE STYLES
+   ───────────────────────────────────────────────────────────── */
+
+@media (max-width: 768px) {
+  /* Enable cursor on mobile */
+  body {
+    cursor: auto !important;
+  }
+  
+  button {
+    cursor: pointer !important;
+  }
+  
+  /* Reduce font sizes */
+  .container {
+    padding: 12px !important;
+  }
+  
+  /* Hero section mobile adjustments */
+  section {
+    padding: 60px 16px !important;
+  }
+  
+  /* Message box mobile */
+  .message-box {
+    padding: 24px !important;
+    margin: 24px 0 !important;
+  }
+  
+  /* Touch-friendly buttons */
+  button {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Extra small screens */
+  section {
+    padding: 40px 12px !important;
+  }
+  
+  /* Smaller orbs for performance */
+  .shape {
+    width: 50% !important;
+    height: 50% !important;
+  }
+  
+  /* Reduce animations on small screens */
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      animation: none !important;
+      transition: none !important;
+    }
+  }
+}
+
+/* Landscape mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+  section {
+    min-height: auto !important;
+    padding: 40px 16px !important;
+  }
+}
+
+/* Tablet adjustments */
+@media (min-width: 769px) and (max-width: 1024px) {
+  section {
+    padding: 80px 32px !important;
+  }
+}
